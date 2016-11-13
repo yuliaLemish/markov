@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'MyriadPro';
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#container .content {
+    display: flex;
+    justify-content: center;
+}
+
+#container .content .change-form .change-amount {
+    font-size: 25px;
+    margin: 1px;
+    width: 30px;
+    background-color: #3a3636;
+    border: none;
+    color: #fff;
+}
+
+#container .content .result-form {
+    display: flex;
+    justify-content: center;
+}
+
+#container .content .result-form .rules .rule {
+    margin-bottom: 5px;
+}
+
+#container .content .result-form .rules .rule .in-string {
+    display: inline;
+    width: 25%;
+    height: 25px;
+    margin: 0 20px;
+}
+
+#container .content .result-form .rules .rule .arrow {
+    display: inline;
+    font-size: 18px;
+}
+
+#container .content .result-form .rules .rule .out-string {
+    display: inline;
+    width: 25%;
+    height: 25px;
+    margin: 0 20px;
+}
+
+#container .content .result-form .result {}
+
+#container .content .result-form .result label {
+    margin-right: 20px;
+}
+
+#container .content .result-form .result #input-string {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+#container .content .result-form .result #output-string {
+    text-align: center;
+    font-size: 26px;
+}
+
+#container .content .result-form .result .get-result {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 14px;
+    background-color: #404040;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+}
+
+#container .file-form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url(../fonts/MyriadPro-Regular.otf);
+}

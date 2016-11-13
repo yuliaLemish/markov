@@ -1,0 +1,25 @@
+{
+  "name": "markov-algorithm",
+  "version": "1.0.0",
+  "description": "basic markov algorithm realisation",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "pug": "^2.0.0-beta6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

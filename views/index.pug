@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(href='css/style.css', rel='stylesheet')
+    h1 Markov algorithm
+    #container
+        .content
+            form.change-form(action='/add', method='post')
+                button.change-amount +
+            form.change-form(action='/del', method='post')
+                button.change-amount -
+            form.result-form(action='/result', method='post')
+                .rules
+                    - for(var i = 0; i < amount; i++)
+                        .rule 
+                            input.in-string(name= "rules["+i+"][in]", value= rules[i].in) 
+                            p.arrow →
+                            input.out-string(name="rules["+i+"][out]", value= rules[i].out)
+                            input.last-rule(type="checkbox", name="rules["+i+"][last]", checked= rules[i].last)
+                .result
+                    label(for="inputString") Enter your string:
+                    input#input-string(name= "inputString", value= inputString)
+                    button.get-result Run
+                    label(for="inputString") Your result:
+                    p#output-string(name= "outputString")= result
+        form.file-form(action='/file', method='post')
+            input.file-input(type = "file" name="file")
+            label(for = "file")
+            button.submit-file Submit
+        .debug
+            - for(var i = 0; i < debugArray.length; i++)
+                .step
+                    label on rule:
+                    p= debugArray[i].rule
+                    label before:
+                    p= debugArray[i].in
+                    label after:
+                    p= debugArray[i].out
+    script(src='js/main.js')
+
+        
